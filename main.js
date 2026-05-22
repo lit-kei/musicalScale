@@ -33,8 +33,8 @@ const clefs = [
         low: "B/2", high: "G/4"
     }, 
     {
-        name: "mezzo-soprano",
-        low: "F/3", high: "D/5"
+        name: "soprano",
+        low: "A/3", high: "F/5"
     }
 ];
 
@@ -51,7 +51,6 @@ function createNote() {
     const e = clefs[Math.floor(Math.random()*clefs.length)];
     const a = accidentals[Math.floor(Math.random()*clefs.length)];
     const clef = e.name;
-
     const key = addAccidental(randomNaturalNote(e.low, e.high), a);
     answer = toGermanNoteName(key);
 
